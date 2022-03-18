@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Heebo", sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+* {
+    transition: all 0.5s ease-in ;
+}
+
+.dark {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+.light {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 60px;
+}
+
+.btn.active {
+    opacity: 1;
+}
+
+.clock-symbol {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.clock-symbol .hour, .clock-symbol .minute, .clock-symbol .second {
+    width: 2px;
+    display: fixed;
+    position: absolute;
+    bottom: 49.50%;
+    transform-origin: bottom center;
+    transition: all 0.5s ease;
+    transform: rotate(0deg);
+}
+
+.clock-symbol .hour {
+    height: 65px;
+}
+
+.clock-symbol .minute {
+    height: 100px;
+}
+
+.clock-symbol .second {
+    background-color: #e74c3c;
+    height: 100px;
+}
+
+.clock-symbol .center_circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid red;
+    z-index: 1;
+}
+
+.time-container {
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    font-family: inherit;
+}
+
+.date-container {
+    color: #aaa;
+    text-transform: uppercase;
+    margin: 10px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+}
+
+.date-container .mday {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: middle;
+    font-family: inherit;
+    font-size: 12px;
+    padding-left: 2px;
+    transition: all 0.5s ease-in;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Theme Clock</title>
+</head>
+<body class="light">
+    <button class="dark btn active">Dark mode</button>
+    <button class="light btn">Light mode</button>
+    <div class="clock-symbol">
+        <div class="hour dark toggle-hint"></div> <!--toggle-hint : toggle dark and light-->
+        <div class="minute dark toggle-hint"></div>
+        <div class="second"></div>
+        <div class="center_circle dark toggle-hint"></div>
+    </div>
+    <div class="time-container"></div>
+    <div class="date-container">
+        <span class="wday"></span>
+        <span>,</span>
+        <span class="month"></span>
+        <span class="mday dark toggle-hint"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
